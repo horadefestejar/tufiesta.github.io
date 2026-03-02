@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiesta de Sofia</title>
+
+    <link rel="shortcut icon" href="public/assets/iconos/favicon.svg" type="image/x-icon">
+
+    <meta name="description" content="Te invito a mi fiesta" />
+    <meta name="author" content="Erick Moreno"/>
+    <meta property="og:image" content="public/assets/og-image.jpg"/>
+
+    <link rel="stylesheet" href="public/css/style.css">
+</head>
+
+<body>
+
+<section class="background">
+
+<!-- SLIDE 1 -->
+<div class="mySlides">
+    <div class="titulo">
+        <h1>Fiesta de Sofi</h1>
+        <p>Domingo 13 de Noviembre 2026 <br>Falta:</p>
+
+        <img src="public/assets/grecia.jpg" alt="portada" class="img-principal">
+
+        <table width="80%">
+            <tr>
+                <td><span id="days"></span></td>
+                <td><span id="hours"></span></td>
+                <td><span id="minutes"></span></td>
+                <td><span id="seconds"></span></td>
+            </tr>
+            <tr>
+                <th>días</th>
+                <th>hrs</th>
+                <th>min</th>
+                <th>seg</th>
+            </tr>
+        </table>
+
+        <!-- BOTONES -->
+        <div class="botones">
+            <button></button>
+            <button></button>
+            <button></button>
+        </div>
+
+    </div>
+</div>
+
+<!-- SLIDE 2 -->
+<div class="mySlides">
+    <div class="textoUno">
+        <h2>
+            <br><br>
+            <span>Acompáñanos</span><br><br>
+            Sofi<br>
+            estará cumpliendo 11 años<br><br><br>
+            Sábado 10 de Noviembre 2026 <br>
+            en punto de las 2:00 pm
+            <br><br>
+            Dirección
+        </h2>
+
+        <!-- BOTONES -->
+        <div class="botones">
+            <button></button>
+            <button></button>
+            <button></button>
+        </div>
+
+    </div>
+</div>
+
+<!-- SLIDE 3 -->
+<div class="mySlides">
+    <div class="seccion">
+        <div id="galeria" class="galeria-container">
+
+            <div class="galeria">
+                <img src="public/assets/galeria-img/picture-01.jpg" alt="foto">
+            </div>
+
+            <div class="galeria">
+                <img src="public/assets/galeria-img/picture-02.jpg" alt="foto">
+            </div>
+
+            <div class="galeria">
+                <img src="public/assets/galeria-img/picture-03.jpg" alt="foto">
+            </div>
+
+        </div>
+
+        <!-- BOTONES -->
+        <div class="botones">
+            <button></button>
+            <button></button>
+            <button></button>
+        </div>
+
+    </div>
+</div>
+
+<!-- DOTS -->
+<div class="dots">
+    <span class="dot1" onclick="currentSlide(1)"></span>
+    <span class="dot2" onclick="currentSlide(2)"></span>
+    <span class="dot3" onclick="currentSlide(3)"></span>
+</div>
+
+<!-- AUDIO -->
+<div class="music-btn" onclick="toggleMusic()">
+    🎵
+</div>
+
+<audio id="musica" loop>
+    <source src="public/media/audiokimy.mp3" type="audio/mp3">
+</audio>
+
+<div class="footer">
+    <a href="#">© Hora de festejar</a>
+</div>
+
+</section>
+
+<script src="public/js/script.js"></script>
+<script src="public/js/counter.js"></script>
+<script src="public/js/galeria.js"></script>
+
+</body>
+</html>
