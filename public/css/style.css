@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 16px;
+}
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  background: url("../assets/bg-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+.img-principal {
+  width: 75vw;
+  max-width: 320px;
+
+  height: auto;
+  max-height: 250px;  /* 🔥 Tope vertical */
+
+  object-fit: contain; /* Mantiene proporción */
+}
+
+/* ===== SLIDES ===== */
+.mySlides {
+  display: none; /* MUY IMPORTANTE */
+}
+
+/* ===== FUENTES ===== */
+@font-face {
+  font-family: "bumpo";
+  src: url(../assets/fonts/Bumpo.ttf);
+}
+
+/* ===== CONTENIDO PRINCIPAL ===== */
+.mySlides img,
+.titulo,
+.titulo h1,
+.titulo p,
+.textoUno h2,
+.dots {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  color: #2a2a2a;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.85);
+  border: 3px solid rgb(255, 162, 178);
+}
+
+/* ===== IMAGEN ===== */
+.mySlides img {
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  width: 80vw;        /* Se adapta al ancho de pantalla */
+  max-width: 320px;   /* No crece demasiado en pantallas grandes */
+  height: auto;       /* Mantiene proporción */
+  
+  border-radius: 10%;
+  padding: 2px;
+  border: none;
+}
+
+/* ===== TITULO ===== */
+.titulo {
+  top: 10%;
+  width: 80vw;
+  height: 70vh;
+  border-radius: 15px;
+}
+
+.titulo h1 {
+  top: 65%;
+  min-width: 320px;
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+}
+
+.titulo h1 {
+  font-size: clamp(20px, 4vw, 32px);
+}
+
+.titulo p {
+  top: 75%;
+  min-width: 320px;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  line-height: 1.5;
+}
+
+.titulo h1,
+.textoUno h2 span {
+  font-family: "bumpo";
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+/* ===== TEXTO SEGUNDO SLIDE ===== */
+.textoUno h2 {
+  top: 10%;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(0, 0, 0);
+  font-weight: normal;
+  width: 80vw;
+  height: 50vh;
+  padding: 20px 10px;
+  border-radius: 15px;
+}
+
+.textoUno h2 span {
+  font-size: 20px;
+}
+
+/* ===== CONTADOR ===== */
+table {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  width: 220px;
+  top: 90%;
+}
+
+td,
+th {
+  color: #858585;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 2px;
+}
+
+td {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+th {
+  font-size: 10px;
+  font-weight: normal;
+}
+
+/* ===== GALERIA ===== */
+.galeria {
+  display: none;
+}
+
+.galeria img {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 80vw;
+  height: auto;
+  border-radius: 8px;
+  border: 3px solid rgb(255, 162, 178);
+  z-index: 10;
+}
+
+/* ===== DOTS ===== */
+.dots {
+  top: 85%;
+  display: flex;
+  justify-content: center;
+  padding: 3px;
+  border-radius: 6%;
+}
+
+.dots span {
+  width: 46px;
+  height: 36px;
+  border-radius: 50%;
+  background-size: 28px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 4px 8px;
+  cursor: pointer;
+}
+
+.dot1 {
+  background-image: url("../assets/iconos/kimy-icon.png");
+}
+
+.dot2 {
+  background-image: url("../assets/iconos/pinpon-icon.png");
+}
+
+.dot3 {
+  background-image: url("../assets/iconos/cangurito-icon.png");
+}
+
+/* ===== BOTONES NUEVOS ===== */
+/*.botones {
+  position: absolute;
+  bottom: 12%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 20;
+}
+
+.botones button {
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: 2px solid rgb(255, 162, 178);
+  background: white;
+  color: #2a2a2a;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}*/
+
+.botones button:hover {
+  transform: scale(1.05);
+}
+
+/* ===== FOOTER ===== */
+.footer a {
+  position: absolute;
+  top: 96%;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 12px;
+  color: #2a2a2a;
+  text-decoration: none;
+}
+
+/* ===== RESPONSIVE BASICO ===== */
+@media screen and (min-width: 600px) {
+  .mySlides img {
+    width: 320px;
+    height: auto;
+  }
+
+  .textoUno h2 {
+    font-size: 1.3rem;
+  }
+
+  .dots span {
+    width: 60px;
+    height: 50px;
+  }
+}
+
+/* ===== BOTON MUSICA ===== */
+.music-btn{
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  width: 45px !important;
+  height: 45px !important;
+  background: rgb(255, 162, 178) !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  font-size: 26px !important;
+  cursor: pointer !important;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3) !important;
+  z-index: 99999 !important;
+  transition: 0.3s ease !important;
+}
+
+.music-btn:hover{
+  transform: scale(1.1);
+}
+
+.botones{
+  display: none;
+}
